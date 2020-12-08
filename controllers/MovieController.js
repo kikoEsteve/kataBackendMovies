@@ -37,7 +37,7 @@ const MovieController = {
     lastMovies(req,res) {
         MovieModel.find({
             release_date: {
-                "$gte" : new Date(2020, 1, 1), "$lt": new Date()
+                "$gte" : new Date(2020, 1, 10), "$lt": new Date()
             }
         })
         .then(movies => res.send(movies))
