@@ -7,6 +7,7 @@ import moviesRouter from './routes/movies.js';
 import usersRouter from './routes/users.js';
 import ordersRouter from './routes/orders.js';
 
+// const API_KEY = '2f0ee4659e75f22b0645bb580847d157' 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
