@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/BackMovies'
+//Ruta a MongoDB Atlas cambiando la contraseña "cM2x.."y nombre de la base de datos "BackMovies"
+const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://dbKikoEsteve:cM2xD4XtRVWLKe5K@cluster0.0ocry.mongodb.net/BackMovies?retryWrites=true&w=majority'
 
 mongoose.connect(MONGO_URI, {
     useCreateIndex: true,
